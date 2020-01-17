@@ -62,7 +62,6 @@
 #include "JNICommandStatus.h"
 #include "JNICommandTaskResult.h"
 #include "JNICompletableFuture.h"
-#include "JNIControlCode.h"
 #include "JNIControlRelayOutputBlock.h"
 #include "JNICounter.h"
 #include "JNICounterConfig.h"
@@ -112,6 +111,7 @@
 #include "JNINumRetries.h"
 #include "JNIObject.h"
 #include "JNIOperateType.h"
+#include "JNIOperationType.h"
 #include "JNIOutstationApplication.h"
 #include "JNIOutstationConfig.h"
 #include "JNIOutstationStackConfig.h"
@@ -139,6 +139,7 @@
 #include "JNITimeSyncMode.h"
 #include "JNITimestampQuality.h"
 #include "JNITransportStatistics.h"
+#include "JNITripCloseCode.h"
 
 namespace jni
 {
@@ -175,7 +176,6 @@ namespace jni
         static cache::CommandStatus CommandStatus;
         static cache::CommandTaskResult CommandTaskResult;
         static cache::CompletableFuture CompletableFuture;
-        static cache::ControlCode ControlCode;
         static cache::ControlRelayOutputBlock ControlRelayOutputBlock;
         static cache::Counter Counter;
         static cache::CounterConfig CounterConfig;
@@ -225,6 +225,7 @@ namespace jni
         static cache::NumRetries NumRetries;
         static cache::Object Object;
         static cache::OperateType OperateType;
+        static cache::OperationType OperationType;
         static cache::OutstationApplication OutstationApplication;
         static cache::OutstationConfig OutstationConfig;
         static cache::OutstationStackConfig OutstationStackConfig;
@@ -252,6 +253,7 @@ namespace jni
         static cache::TimeSyncMode TimeSyncMode;
         static cache::TimestampQuality TimestampQuality;
         static cache::TransportStatistics TransportStatistics;
+        static cache::TripCloseCode TripCloseCode;
     };
 }
 

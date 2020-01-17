@@ -61,7 +61,6 @@ namespace jni
     cache::CommandStatus JCache::CommandStatus;
     cache::CommandTaskResult JCache::CommandTaskResult;
     cache::CompletableFuture JCache::CompletableFuture;
-    cache::ControlCode JCache::ControlCode;
     cache::ControlRelayOutputBlock JCache::ControlRelayOutputBlock;
     cache::Counter JCache::Counter;
     cache::CounterConfig JCache::CounterConfig;
@@ -111,6 +110,7 @@ namespace jni
     cache::NumRetries JCache::NumRetries;
     cache::Object JCache::Object;
     cache::OperateType JCache::OperateType;
+    cache::OperationType JCache::OperationType;
     cache::OutstationApplication JCache::OutstationApplication;
     cache::OutstationConfig JCache::OutstationConfig;
     cache::OutstationStackConfig JCache::OutstationStackConfig;
@@ -138,6 +138,7 @@ namespace jni
     cache::TimeSyncMode JCache::TimeSyncMode;
     cache::TimestampQuality JCache::TimestampQuality;
     cache::TransportStatistics JCache::TransportStatistics;
+    cache::TripCloseCode JCache::TripCloseCode;
 
     bool JCache::init(JNIEnv* env)
     {
@@ -169,7 +170,6 @@ namespace jni
         && CommandStatus.init(env)
         && CommandTaskResult.init(env)
         && CompletableFuture.init(env)
-        && ControlCode.init(env)
         && ControlRelayOutputBlock.init(env)
         && Counter.init(env)
         && CounterConfig.init(env)
@@ -219,6 +219,7 @@ namespace jni
         && NumRetries.init(env)
         && Object.init(env)
         && OperateType.init(env)
+        && OperationType.init(env)
         && OutstationApplication.init(env)
         && OutstationConfig.init(env)
         && OutstationStackConfig.init(env)
@@ -246,6 +247,7 @@ namespace jni
         && TimeSyncMode.init(env)
         && TimestampQuality.init(env)
         && TransportStatistics.init(env)
+        && TripCloseCode.init(env)
         ;
     }
 
@@ -279,7 +281,6 @@ namespace jni
         CommandStatus.cleanup(env);
         CommandTaskResult.cleanup(env);
         CompletableFuture.cleanup(env);
-        ControlCode.cleanup(env);
         ControlRelayOutputBlock.cleanup(env);
         Counter.cleanup(env);
         CounterConfig.cleanup(env);
@@ -329,6 +330,7 @@ namespace jni
         NumRetries.cleanup(env);
         Object.cleanup(env);
         OperateType.cleanup(env);
+        OperationType.cleanup(env);
         OutstationApplication.cleanup(env);
         OutstationConfig.cleanup(env);
         OutstationStackConfig.cleanup(env);
@@ -356,5 +358,6 @@ namespace jni
         TimeSyncMode.cleanup(env);
         TimestampQuality.cleanup(env);
         TransportStatistics.cleanup(env);
+        TripCloseCode.cleanup(env);
     }
 }

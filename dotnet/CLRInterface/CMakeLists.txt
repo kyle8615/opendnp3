@@ -80,7 +80,6 @@ add_library(DNP3CLRInterface SHARED
     ./src/gen/ChannelState.cs
     ./src/gen/CommandPointState.cs
     ./src/gen/CommandStatus.cs
-    ./src/gen/ControlCode.cs
     ./src/gen/CounterQuality.cs
     ./src/gen/DoubleBit.cs
     ./src/gen/DoubleBitBinaryQuality.cs
@@ -109,6 +108,7 @@ add_library(DNP3CLRInterface SHARED
     ./src/gen/LinkStatus.cs
     ./src/gen/MasterTaskType.cs
     ./src/gen/OperateType.cs
+    ./src/gen/OperationType.cs
     ./src/gen/Parity.cs
     ./src/gen/PointClass.cs
     ./src/gen/QualifierCode.cs
@@ -130,6 +130,7 @@ add_library(DNP3CLRInterface SHARED
     ./src/gen/TaskCompletion.cs
     ./src/gen/TimeSyncMode.cs
     ./src/gen/TimestampQuality.cs
+    ./src/gen/TripCloseCode.cs
     ./src/gen/UserOperation.cs
     ./src/gen/UserRole.cs
 )
