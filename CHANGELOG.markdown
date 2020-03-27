@@ -1,3 +1,6 @@
+### 2.3.4 ###
+* :star: Added optional reconnection delay parameter to `ChannelRetry`. When a connection is lost, this parameter is used to wait before reattempting to establish a connection. Then, the same reconnection strategy as before is used for retries. See issue [#354](https://github.com/dnp3/opendnp3/issues/354).
+
 ### 2.3.3 ###
 * :beetle: Fix C# exception on time conversion upon restart command not supported. See issue [#350](https://github.com/dnp3/opendnp3/issues/350).
 
