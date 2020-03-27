@@ -1,4 +1,6 @@
 ### 2.3.4 ###
+* :beetle: Fix conformance issue with data-link confirmations. See PR [#359](https://github.com/dnp3/opendnp3/pull/359).
+* :beetle: Fix conformance issue select & operate behaviour. See PR [#359](https://github.com/dnp3/opendnp3/pull/359).
 * :star: Added optional reconnection delay parameter to `ChannelRetry`. When a connection is lost, this parameter is used to wait before reattempting to establish a connection. Then, the same reconnection strategy as before is used for retries. See issue [#354](https://github.com/dnp3/opendnp3/issues/354).
 
 ### 2.3.3 ###
